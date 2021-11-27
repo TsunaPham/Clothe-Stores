@@ -23,27 +23,28 @@
                 <div class="language-dropdown">
                     <span class="language-dd">English</span>
                     <ul id="language">
-                        <li class="">German</li>
-                        <li class="">French</li>
+                        <li class="">Vietnamese</li>
                     </ul>
                 </div>
-                <p class="phone-no"><i class="anm anm-phone-s"></i> 0705459542</p>
+                <p class="phone-no"><i class="anm anm-phone-s"></i> 0854464200</p>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block d-lg-block">
-                <div class="text-center"><p class="top-header_middle-text"> Worldwide Express Shipping</p></div>
+                <div class="text-center">
+                    <p class="top-header_middle-text"> Worldwide Express Shipping</p>
+                </div>
             </div>
             <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                 <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                 <ul class="customer-links list-inline">
-                        <?php  if(isset($_SESSION['login'])){ ?>
-                          <li><a href="?act=wishlist">❤</a></li>
-                        <li><a href="?act=taikhoan&xuli=account">Welcome <?=$_SESSION['login']['Ho']?> <?=$_SESSION['login']['Ten']?></a></li>
+                    <?php if (isset($_SESSION['login'])) { ?>
+                        <li><a href="?act=wishlist">❤</a></li>
+                        <li><a href="?act=taikhoan&xuli=account">Welcome <?= $_SESSION['login']['Ho'] ?> <?= $_SESSION['login']['Ten'] ?></a></li>
                         <li><a href="?act=taikhoan&xuli=dangxuat">Đăng xuất</a></li>
-                      <?php
-                    }else{ ?>
-                          <li><a href="?act=taikhoan">Login</a></li>
+                    <?php
+                    } else { ?>
+                        <li><a href="?act=taikhoan">Login</a></li>
                         <li><a href="?act=wishlist">Wishlist</a></li>
-                        <?php } ?>
+                    <?php } ?>
                 </ul>
             </div>
         </div>
@@ -69,7 +70,8 @@
                     </button>
                 </div>
                 <!--Desktop Menu-->
-                <nav class="grid__item" id="AccessibleNav"><!-- for mobile -->
+                <nav class="grid__item" id="AccessibleNav">
+                    <!-- for mobile -->
                     <ul id="siteNav" class="site-nav medium center hidearrow">
                         <li class="lvl1 parent megamenu"><a href="?act=home">Home <i class="anm anm-angle-down-l"></i></a></li>
                         <li class="lvl1 parent megamenu"><a href="?act=shop">Shop <i class="anm anm-angle-down-l"></i></a></li>
@@ -79,7 +81,7 @@
                         <li class="lvl1 parent dropdown"><a href="?act=blog">Blog <i class="anm anm-angle-down-l"></i></a></li>
                         <li class="lvl1"><a href="#"><b>Buy Now!</b> <i class="anm anm-angle-down-l"></i></a></li>
 
-                  </ul>
+                    </ul>
                 </nav>
                 <!--End Desktop Menu-->
             </div>
@@ -93,19 +95,20 @@
             </div>
             <!--Mobile Logo-->
             <?php
-            $count = 0 ; $sluong = 0;
+            $count = 0;
+            $sluong = 0;
             if (isset($_SESSION['sanpham'])) {
                 foreach ($_SESSION['sanpham'] as $value) {
                     $count += $value['ThanhTien'];
-                    $sluong+=$value['SoLuong'];
+                    $sluong += $value['SoLuong'];
                 }
             }
-             ?>
+            ?>
             <div class="col-4 col-sm-3 col-md-3 col-lg-2">
                 <div class="site-cart">
                     <a href="#" class="site-header__cart" title="Cart">
                         <i class="icon anm anm-bag-l"></i>
-                        <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count"><?=number_format($sluong)?></span>
+                        <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count"><?= number_format($sluong) ?></span>
                     </a>
 
 
@@ -114,54 +117,54 @@
                     <!--Minicart Popup-->
                     <div id="header-cart" class="block block-cart">
                         <ul class="mini-products-list">
-                          <?php
-                                 if (isset($_SESSION['sanpham'])) {
-                                           foreach ($_SESSION['sanpham'] as $value) { ?>
-                            <li class="item">
-                                <a class="product-image" href="?act=detail&id=<?= $value['MaSP'] ?>">
-                                    <img src="assets/<?= $value['HinhAnh1'] ?>" alt="" title="" />
-                                </a>
-                                <div class="product-details">
-                                    <a href="?act=cart&xuli=deleteall&id=<?= $value['MaSP'] ?>" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                    <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                    <a class="pName" href="?act=detail&id=<?= $value['MaSP'] ?>"><?= $value['TenSP'] ?> </a>
-                                    <div class="variant-cart">Black / XL</div>
-                                    <div class="wrapQtyBtn">
-                                        <div class="qtyField">
-                                            <span class="label">Qty:</span>
-                                            <a class="qtyBtn minus" href="?act=cart&xuli=delete&id=<?=$value['MaSP']?>"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
-                                            <input type="text" id="Quantity" name="quantity" value="<?= $value['SoLuong'] ?>" class="product-form__input qty">
-                                            <a class="qtyBtn plus" href="?act=cart&xuli=update&id=<?=$value['MaSP']?>"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                            <?php
+                            if (isset($_SESSION['sanpham'])) {
+                                foreach ($_SESSION['sanpham'] as $value) { ?>
+                                    <li class="item">
+                                        <a class="product-image" href="?act=detail&id=<?= $value['MaSP'] ?>">
+                                            <img src="assets/<?= $value['HinhAnh1'] ?>" alt="" title="" />
+                                        </a>
+                                        <div class="product-details">
+                                            <a href="?act=cart&xuli=deleteall&id=<?= $value['MaSP'] ?>" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                                            <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                                            <a class="pName" href="?act=detail&id=<?= $value['MaSP'] ?>"><?= $value['TenSP'] ?> </a>
+                                            <div class="variant-cart">Black / XL</div>
+                                            <div class="wrapQtyBtn">
+                                                <div class="qtyField">
+                                                    <span class="label">Qty:</span>
+                                                    <a class="qtyBtn minus" href="?act=cart&xuli=delete&id=<?= $value['MaSP'] ?>"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                    <input type="text" id="Quantity" name="quantity" value="<?= $value['SoLuong'] ?>" class="product-form__input qty">
+                                                    <a class="qtyBtn plus" href="?act=cart&xuli=update&id=<?= $value['MaSP'] ?>"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="priceRow">
+                                                <div class="product-price">
+                                                    <span class="money"><?= number_format($value['ThanhTien']) ?> $</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="priceRow">
-                                        <div class="product-price">
-                                            <span class="money"><?= number_format($value['ThanhTien']) ?> $</span>
-                                        </div>
-                                     </div>
-                                </div>
-                            </li>
-                          <?php }
-                          } ?>
+                                    </li>
+                            <?php }
+                            } ?>
 
 
                         </ul>
-                        <?php if(isset($_SESSION['sanpham']) && $_SESSION['sanpham']!=null){ ?>
-                        <div class="total">
-                            <div class="total-in">
+                        <?php if (isset($_SESSION['sanpham']) && $_SESSION['sanpham'] != null) { ?>
+                            <div class="total">
+                                <div class="total-in">
 
-                                <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$ <?=number_format($count,3)?></span></span>
+                                    <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$ <?= number_format($count, 3) ?></span></span>
+                                </div>
+                                <div class="buttonSet text-center">
+                                    <a href="?act=cart" class="btn btn-secondary btn--small">View Cart</a>
+                                    <a href="?act=checkout" class="btn btn-secondary btn--small">Checkout</a>
+                                </div>
                             </div>
-                             <div class="buttonSet text-center">
-                                <a href="?act=cart" class="btn btn-secondary btn--small">View Cart</a>
-                                <a href="?act=checkout" class="btn btn-secondary btn--small">Checkout</a>
+                        <?php } else { ?>
+                            <div class="total">
+                                <span><strong>Your cart is empty</strong></span>
                             </div>
-                        </div>
-                      <?php }else{ ?>
-                        <div class="total">
-                          <span><strong>Your cart is empty</strong></span>
-                        </div>
-                      <?php } ?>
+                        <?php } ?>
                     </div>
 
 
@@ -182,15 +185,15 @@
 <div class="mobile-nav-wrapper" role="navigation">
     <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
     <ul id="MobileNav" class="mobile-nav">
-      <li class="lvl1 parent megamenu"><a href="?act=home">Home <i class="anm anm-angle-down-l"></i></a></li>
-      <li class="lvl1 parent megamenu"><a href="?act=shop">Shop <i class="anm anm-angle-down-l"></i></a></li>
-      <li class="lvl1 parent dropdown"><a href="?act=compare">Compare<i class="anm anm-angle-down-l"></i></a></li>
-      <li class="lvl1 parent dropdown"><a href="?act=about">About <i class="anm anm-angle-down-l"></i></a></li>
-      <li class="lvl1 parent dropdown"><a href="?act=contact">Contact <i class="anm anm-angle-down-l"></i></a></li>
-      <li class="lvl1 parent dropdown"><a href="?act=blog">Blog <i class="anm anm-angle-down-l"></i></a></li>
-      <li class="lvl1"><a href="#"><b>Buy Now!</b> <i class="anm anm-angle-down-l"></i></a></li>
-    </li>
-  </ul>
+        <li class="lvl1 parent megamenu"><a href="?act=home">Home <i class="anm anm-angle-down-l"></i></a></li>
+        <li class="lvl1 parent megamenu"><a href="?act=shop">Shop <i class="anm anm-angle-down-l"></i></a></li>
+        <li class="lvl1 parent dropdown"><a href="?act=compare">Compare<i class="anm anm-angle-down-l"></i></a></li>
+        <li class="lvl1 parent dropdown"><a href="?act=about">About <i class="anm anm-angle-down-l"></i></a></li>
+        <li class="lvl1 parent dropdown"><a href="?act=contact">Contact <i class="anm anm-angle-down-l"></i></a></li>
+        <li class="lvl1 parent dropdown"><a href="?act=blog">Blog <i class="anm anm-angle-down-l"></i></a></li>
+        <li class="lvl1"><a href="#"><b>Buy Now!</b> <i class="anm anm-angle-down-l"></i></a></li>
+        </li>
+    </ul>
 </div>
 <!--End Mobile Menu-->
 

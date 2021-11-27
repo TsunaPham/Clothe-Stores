@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- auth-register.html  21 Nov 2019 04:05:01 GMT -->
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -96,7 +93,4 @@
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
 </body>
-
-
-<!-- auth-register.html  21 Nov 2019 04:05:02 GMT -->
 </html>

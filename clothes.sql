@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`adminID`, `adminName`, `adminEmail`, `adminUser`, `adminPass`, `lever`) VALUES
-(1, 'thien', 'thien@gmail.com', 'thienadmin', 'e10adc3949ba59abbe56e057f20f883e', 0);
+(1, 'nguyen', 'cagood123@gmail.com', 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 0);
 
 -- --------------------------------------------------------
 

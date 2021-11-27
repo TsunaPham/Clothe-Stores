@@ -46,7 +46,7 @@ class LoginController
         if ($_POST['MatKhau'] != $_POST['check_password']) {
             $check2 = 1;
         }
-
+	echo $check2;
         $data = array(
             'Ho' =>    $_POST['Ho'],
             'Ten'  =>   $_POST['Ten'],
@@ -65,7 +65,7 @@ class LoginController
                 $data[$key] = $value;
             }
         }
-
+	
         $this->login_model->dangky_action($data, $check1, $check2);
     }
     function dangxuat()

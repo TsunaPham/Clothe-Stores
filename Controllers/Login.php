@@ -46,7 +46,7 @@ class LoginController
         if ($_POST['MatKhau'] != $_POST['check_password']) {
             $check2 = 1;
         }
-	echo $check2;
+        echo $check2;
         $data = array(
             'Ho' =>    $_POST['Ho'],
             'Ten'  =>   $_POST['Ten'],
@@ -65,7 +65,7 @@ class LoginController
                 $data[$key] = $value;
             }
         }
-	
+
         $this->login_model->dangky_action($data, $check1, $check2);
     }
     function dangxuat()
@@ -119,5 +119,50 @@ class LoginController
             }
         }
         header('location: ?act=taikhoan&xuli=account#doitk');
+    }
+    function update_account()
+    {
+
+        if (isset($_POST['Ho'])) {
+            $data = array(
+                'Ho' =>    $_POST['Ho'],
+                'Ten'  =>   $_POST['Ten'],
+                'SDT' => $_POST['SĐT'],
+                'Email' =>    $_POST['Email'],
+            );
+            foreach ($data as $key => $value) {
+                if (strpos($value, "'") != false) {
+                    $value = str_replace("'", "\'", $value);
+                    $data[$key] = $value;
+                }
+            }
+            $this->login_model->update_account($data);
+        }
+        header('location: ?act=taikhoan&xuli=account#doitk');
+    }
+    function update_password()
+    {
+        $taikhoan = $_POST['taikhoan'];
+        $matkhau = md5($_POST['MatKhau']);
+        if (strpos($taikhoan, "'") != false) {
+            $taikhoan = str_replace("'", "\'", $taikhoan);
+        }
+        $data = array(
+            'taikhoan' => $taikhoan,
+            'matkhau' => $matkhau,
+        );
+        if ($this->login_model->checkPassword($data)) {
+            if ($_POST['MatKhauMoi'] == $_POST['MatKhauXN']) {
+                $data2 = array(
+                    'taikhoan' => $taikhoan,
+                    'MatKhau' => md5($_POST['MatKhauMoi']),
+                );
+                $this->login_model->update_password($data2);
+            } else
+                setcookie('doimk_error', 'Mật khẩu mới không trùng nhau', time() + 2);
+        } else {
+            setcookie('doimk_error', 'Tài khoản không tồn tại', time() + 2);
+        }
+        header('Location: ?act=forgot-password');
     }
 }

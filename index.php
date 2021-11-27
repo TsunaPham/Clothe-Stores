@@ -3,11 +3,11 @@ session_start();
 $mod = isset($_GET['act']) ? $_GET['act'] : "home";
 switch ($mod) {
     case 'sub':
-    require_once('Controllers/subcribe.php');
-    $ct = new Subcribe();
-    $ct->sub();
-    break;
-      break;
+        require_once('Controllers/subcribe.php');
+        $ct = new Subcribe();
+        $ct->sub();
+        break;
+        break;
     case 'home':
         require_once('Controllers/Home.php');
         $ct = new HomeController();
@@ -42,16 +42,16 @@ switch ($mod) {
         require_once('Controllers/Detail.php');
         $ct = new DetailController();
         switch ($act) {
-          case 'detail':
-            $ct->list();
-            break;
+            case 'detail':
+                $ct->list();
+                break;
             case 'comment':
-            $ct->comment();
+                $ct->comment();
 
-            break;
-          default:
-            $ct->list();
-            break;
+                break;
+            default:
+                $ct->list();
+                break;
         }
         break;
     case 'cart':
@@ -96,8 +96,8 @@ switch ($mod) {
             default:
                 $ct->list_compare();
                 break;
-            }
-            break;
+        }
+        break;
     case 'wishlist':
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
         require_once('Controllers/Wishlist.php');
@@ -115,13 +115,13 @@ switch ($mod) {
             default:
                 $ct->list_wish();
                 break;
-            }
-            break;
-        case 'contact_mes':
-            require_once('Controllers/Lienhe.php');
-            $ct = new LienHe();
-            $ct->lienhe();
-          break;
+        }
+        break;
+    case 'contact_mes':
+        require_once('Controllers/Lienhe.php');
+        $ct = new LienHe();
+        $ct->lienhe();
+        break;
     case 'taikhoan':
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "taikhoan";
         require_once('Controllers/Login.php');
@@ -133,6 +133,9 @@ switch ($mod) {
                     break;
                 case 'account':
                     $ct->account();
+                    break;
+                case 'capnhat':
+                    $ct->update_account();
                     break;
                 case 'update':
                     $ct->update();
@@ -170,6 +173,9 @@ switch ($mod) {
                     case 'dangky':
                         $ct->dangky();
                         break;
+                    case 'forgot':
+                        $ct->update_password();
+                        break;
                     default:
                         $ct->login();
                         break;
@@ -183,4 +189,3 @@ switch ($mod) {
         $ct->list();
         break;
 }
-?>

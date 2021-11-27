@@ -14,28 +14,42 @@ class Login extends Model
 
         $login = $this->conn->query($query)->fetch_assoc();
         if ($login !== NULL) {
-            if($login['MaQuyen'] == 2){
+            if ($login['MaQuyen'] == 2) {
                 $_SESSION['isLogin_Admin'] = true;
                 $_SESSION['login'] = $login;
-            }else{
-                if($login['MaQuyen'] == 3){
-                $_SESSION['isLogin_Nhanvien'] = true;
-                $_SESSION['login'] = $login;
-                }else{
+            } else {
+                if ($login['MaQuyen'] == 3) {
+                    $_SESSION['isLogin_Nhanvien'] = true;
+                    $_SESSION['login'] = $login;
+                } else {
                     $_SESSION['isLogin'] = true;
                     $_SESSION['login'] = $login;
                 }
             }
+            $_SESSION['Ho'] = $login['Ho'];
+            $_SESSION['Ten'] = $login['Ten'];
+            $_SESSION['TaiKhoan'] = $login['TaiKhoan'];
+            $_SESSION['SDT'] = $login['SDT'];
+            $_SESSION['Email'] = $login['Email'];
+            $_SESSION['DiaChi'] = $login['DiaChi'];
             header('Location: ?mod=login');
         } else {
             setcookie('msg1', 'Đăng nhập không thành công', time() + 5);
             header('Location: ?act=taikhoan#dangnhap');
         }
+    }
+    function checkPassword($data)
+    {
+        $query = "SELECT * from nguoidung  WHERE taikhoan = '" . $data['taikhoan'] . "' AND matkhau = '" . $data['matkhau'] . "' AND trangthai = 1";
 
+        $login = $this->conn->query($query)->fetch_assoc();
+        if ($login !== NULL) {
+            return true;
+        } else return false;
     }
     function logout()
     {
-        if(isset($_SESSION['isLogin'])){
+        if (isset($_SESSION['isLogin'])) {
             unset($_SESSION['isLogin']);
             unset($_SESSION['login']);
         }
@@ -91,15 +105,39 @@ class Login extends Model
         $v = trim($v, ",");
 
         $query = "UPDATE NguoiDung SET  $v   WHERE  MaND = " . $_SESSION['login']['MaND'];
-
+        $query2 = "SELECT * from nguoidung  WHERE  MaND = " . $_SESSION['login']['MaND'];
         $result = $this->conn->query($query);
-
+        $login = $this->conn->query($query2)->fetch_assoc();
         if ($result == true) {
             setcookie('doimk', 'Cập nhật tài khoản thành công', time() + 2);
+            $_SESSION['Ho'] = $login['Ho'];
+            $_SESSION['Ten'] = $login['Ten'];
+            $_SESSION['TaiKhoan'] = $login['TaiKhoan'];
+            $_SESSION['SDT'] = $login['SDT'];
+            $_SESSION['Email'] = $login['Email'];
+            $_SESSION['DiaChi'] = $login['DiaChi'];
             header('Location: ?act=taikhoan&xuli=account#doitk');
         } else {
             setcookie('doimk', 'Mật khẩu xác nhận không đúng', time() + 2);
             header('Location: ?act=taikhoan&xuli=account#doitk');
+        }
+    }
+    function update_password($data)
+    {
+        $v = "";
+        foreach ($data as $key => $value) {
+            $v .= $key . "='" . $value . "',";
+        }
+        $v = trim($v, ",");
+
+        $query = "UPDATE NguoiDung SET  $v WHERE taikhoan = '" . $data['taikhoan'] . "'";
+        $result = $this->conn->query($query);
+        if ($result == true) {
+            setcookie('doimk', 'Cập nhật mật khẩu thành công', time() + 2);
+            header('Location: ?act=forgot-password');
+        } else {
+            setcookie('doimk_error', 'Mật khẩu xác nhận không đúng', time() + 2);
+            header('Location: ?act=forgot-password');
         }
     }
     function error()

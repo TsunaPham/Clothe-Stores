@@ -65,17 +65,17 @@ class Login extends Model
 
                 $status = $this->conn->query($query);
                 if ($status == true) {
-                    setcookie('msg', 'Đăng ký thành công', time() + 2);
+                    setcookie('msg_success', 'Đăng ký thành công, vui lòng quay lại trang đăng nhập', time() + 2);
                 } else {
-                    setcookie('msg', 'Đăng ký không thành công', time() + 2);
+                    setcookie('msg_error', 'Đăng ký không thành công', time() + 2);
                 }
             } else {
-                setcookie('msg', 'Mật khẩu không trùng nhau', time() + 2);
+                setcookie('msg_error', 'Mật khẩu không trùng nhau', time() + 2);
             }
         } else {
-            setcookie('msg', 'Tên tài khoản hoặc Email  đã tồn tại', time() + 2);
+            setcookie('msg_error', 'Tên tài khoản hoặc Email  đã tồn tại', time() + 2);
         }
-        header('Location: ?act=taikhoan#dangky');
+        header('Location: ?act=register');
     }
     function account()
     {

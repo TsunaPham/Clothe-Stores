@@ -9,11 +9,16 @@
         	<div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
                 	<div class="mb-4">
-                    <?php if (isset($_COOKIE['msg'])) { ?>
+                    <?php if (isset($_COOKIE['msg_success'])) { ?>
 						                <div class="alert alert-success">
-							                       <strong>Thông báo</strong> <?= $_COOKIE['msg'] ?>
+							                       <strong>Thông báo</strong> <?= $_COOKIE['msg_success'] ?>
 						                             </div>
 					                                  <?php } ?>
+                    <?php if (isset($_COOKIE['msg_error'])) { ?>
+    <div class="alert alert-danger">
+                <strong>Thông báo</strong> <?= $_COOKIE['msg_error'] ?>
+                    </div>
+                    <?php } ?>
                        <form method="post" action="?act=taikhoan&xuli=dangky" id="CustomerLoginForm"  class="contact-form">
                           <div class="row">
 	                          <div class="col-12 col-sm-12 col-md-12 col-lg-12">

@@ -2,7 +2,7 @@
     	<!--Page Title-->
     	<div class="page section-header text-center">
 			<div class="page-title">
-        		<div class="wrapper"><h1 class="page-width">Login</h1></div>
+        		<div class="wrapper"><h1 class="page-width">Reset Password</h1></div>
       		</div>
 		</div>
         <!--End Page Title-->

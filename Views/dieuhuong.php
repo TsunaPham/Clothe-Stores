@@ -50,6 +50,9 @@ switch ($act) {
     case "register":
         require_once("login/register.php");
         break;
+    case 'forgot-password':
+        require_once("login/forgot-password.php");
+        break;
     case "taikhoan":
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "login";
         if (isset($_SESSION['isLogin']) && $_SESSION['isLogin'] == true) {

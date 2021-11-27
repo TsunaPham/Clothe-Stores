@@ -7,17 +7,17 @@
 		</div>
         <!--End Page Title-->
         <div class="map-section map">
-        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7671.366397090153!2d108.25409211986278!3d15.977912084659279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sKorea%20-%20Vietnam%20Friendship%20Information%20Technology%20College!5e0!3m2!1sen!2s!4v1604130042396!5m2!1sen!2s" height="350" allowfullscreen></iframe>
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.494668100784!2d106.65843061462245!3d10.773374292323586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIC0gxJDhuqFpIGjhu41jIFF14buRYyBnaWEgVFAuSENN!5e0!3m2!1svi!2s!4v1637982197681!5m2!1svi!2s" height="350" allowfullscreen></iframe>
             <div class="container">
             	<div class="row">
                 	<div class="map-section__overlay-wrapper">
                         <div class="map-section__overlay">
                             <h3 class="h4">Our store</h3>
                             <div class="rte-setting">
-                                <p>470 Tran Dai Nghia<br>Hoa Hai, Ngu Hanh Son , Da Nang</p>
+                                <p>HCMUT<br>Ly Thuong Kiet Street, District 10, HCM city</p>
                                 <p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm</p>
                             </div>
-                            <p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7671.366397090153!2d108.25409211986278!3d15.977912084659279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sKorea%20-%20Vietnam%20Friendship%20Information%20Technology%20College!5e0!3m2!1sen!2s!4v1604130042396!5m2!1sen!2s" class="btn btn--secondary btn--small" target="_blank">Get directions</a></p>
+                            <p><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+B%C3%A1ch+khoa+-+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+TP.HCM/@10.7733743,106.6584306,17z/data=!3m1!4b1!4m5!3m4!1s0x31752ec3c161a3fb:0xef77cd47a1cc691e!8m2!3d10.7733743!4d106.6606193?hl=vi-VN" class="btn btn--secondary btn--small" target="_blank">Get directions</a></p>
                         </div>
                    	</div>
                 </div>
@@ -84,9 +84,9 @@
                     </div>
                 	<hr />
                     <ul class="addressFooter">
-                        <li><i class="icon anm anm-map-marker-al"></i><p>55 Gallaxy Enque, 2568 steet, 23568 NY</p></li>
-                        <li class="phone"><i class="icon anm anm-phone-s"></i><p>(440) 000 000 0000</p></li>
-                        <li class="email"><i class="icon anm anm-envelope-l"></i><p>sales@yousite.com</p></li>
+                        <li><i class="icon anm anm-map-marker-al"></i><p>Ly Thuong Kiet Street, District 10, HCM city</p></li>
+                        <li class="phone"><i class="icon anm anm-phone-s"></i><p>0963 214 666</p></li>
+                        <li class="email"><i class="icon anm anm-envelope-l"></i><p>anh.nguyenminh207@hcmut.edu.vn</p></li>
                     </ul>
                     <hr />
                     <ul class="list--inline site-footer__social-icons social-icons">

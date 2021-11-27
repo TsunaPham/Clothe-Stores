@@ -58,7 +58,7 @@
             <!--Desktop Logo-->
             <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                    <img src="assets/images/logo-1.png" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                 </a>
             </div>
             <!--End Desktop Logo-->
@@ -89,7 +89,7 @@
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo.png" alt="" title="" />
+                        <img src="assets/images/logo-1.png" alt="" title="" />
                     </a>
                 </div>
             </div>

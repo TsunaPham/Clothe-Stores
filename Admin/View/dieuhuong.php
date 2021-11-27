@@ -6,8 +6,7 @@ switch ($act) {
         $ob = new Home_CT();
         $ob->home();
         include 'View/home/banner.php';
-        include 'View/home/chart.php';
-    break;
+            break;
   case 'view-acc':
         include 'View/account/account-view.php';
     break;

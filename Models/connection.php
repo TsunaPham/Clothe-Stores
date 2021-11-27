@@ -4,7 +4,7 @@
         function __construct()
         {
             //Thong so ket noi CSDL
-            $severname ="localhost:3310";
+            $severname ="localhost:3306";
             $username ="root";
             $password ="";
             $db_name ="cnw4s";

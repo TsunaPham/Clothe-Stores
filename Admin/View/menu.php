@@ -2,7 +2,7 @@
 <div class="main-sidebar sidebar-style-2">
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-      <a href="?act=home"> <img alt="image" src="assets/img/logo1.png" class="header-logo" /> <span
+      <a href="?act=home"> <img alt="image" src="assets/img/logo-1.png" class="header-logo" /> <span
           class="logo-name">KunS</span>
       </a>
     </div>

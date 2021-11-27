@@ -297,7 +297,7 @@
             <div class="section instagram-feed-section">
             	<div class="section-header text-center">
                     <h2 class="h2 heading-font">Follow us On Instagram</h2>
-                    <a href="https://www.instagram.com/sinnn_2109/">@sinn_2109</a>
+                    <a href="#">@mianh.2000</a>
                 </div>
                 <!--Instagram ID-->
             	<div id="instafeed" class="imlow_resolution"></div>

@@ -49,7 +49,7 @@
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="form-group">
                                     <label for="CustomerPassword">Password</label>
-                                    <input type="password"  name="Matkhau" placeholder="" id="CustomerPassword" class="" required minlength="6">
+                                    <input type="password"  name="MatKhau" placeholder="" id="CustomerPassword" class="" required minlength="6">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">

@@ -75,12 +75,8 @@
                     <ul id="siteNav" class="site-nav medium center hidearrow">
                         <li class="lvl1 parent megamenu"><a href="?act=home">Home <i class="anm anm-angle-down-l"></i></a></li>
                         <li class="lvl1 parent megamenu"><a href="?act=shop">Shop <i class="anm anm-angle-down-l"></i></a></li>
-                        <li class="lvl1 parent dropdown"><a href="?act=compare">Compare<i class="anm anm-angle-down-l"></i></a></li>
                         <li class="lvl1 parent dropdown"><a href="?act=about">About <i class="anm anm-angle-down-l"></i></a></li>
                         <li class="lvl1 parent dropdown"><a href="?act=contact">Contact <i class="anm anm-angle-down-l"></i></a></li>
-                        <li class="lvl1 parent dropdown"><a href="?act=blog">Blog <i class="anm anm-angle-down-l"></i></a></li>
-                        <li class="lvl1"><a href="#"><b>Buy Now!</b> <i class="anm anm-angle-down-l"></i></a></li>
-
                     </ul>
                 </nav>
                 <!--End Desktop Menu-->

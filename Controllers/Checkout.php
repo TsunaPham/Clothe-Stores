@@ -39,7 +39,7 @@ class CheckoutController
                 $count += $value['ThanhTien'];
             }
         }
-
+        $_SESSION['DiaChiDien'] = $_POST['DiaChi'];
         $data = array(
             'MaND' => $_SESSION['login']['MaND'],
             'NgayLap' => $ThoiGian,

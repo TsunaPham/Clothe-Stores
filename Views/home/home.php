@@ -83,7 +83,7 @@
                                                 <a href="?act=cart&xuli=add&id=<?= $value['MaSP'] ?>" class="btn cartIcon btn-addto-cart" id="add-cart" type="button" tabindex="0" style="width:100%"><i class="icon anm anm-bag-l"></i></a>
                                             </div>
 
-                                            <a href="javascript:void(0)" title="Quick View" class="btn-style2 quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+                                            <a href="?act=detail&xuli=detail&id=<?= $value['MaSP'] ?>" title="Detail" class="btn-style2 quick-view-popup quick-view">
                                                 <i class="icon anm anm-search-plus-r"></i>
                                             </a>
                                             <div class="wishlist-btn btn-style2">
@@ -285,7 +285,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
                         </div>
-                        <a href="#" class="btn">Shop Now</a>
+                        <a href="?act=shop" class="btn">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -295,15 +295,6 @@
 <!--Feature Content-->
 
 <!--Instagram Section-->
-<div class="section instagram-feed-section">
-    <div class="section-header text-center">
-        <h2 class="h2 heading-font">Follow us On Instagram</h2>
-        <a href="https://www.instagram.com/sinnn_2109/">@sinn_2109</a>
-    </div>
-    <!--Instagram ID-->
-    <div id="instafeed" class="imlow_resolution"></div>
-    <!--End Instagram ID-->
-</div>
 <!--End Instagram Section-->
 
 <!--End Body Content-->

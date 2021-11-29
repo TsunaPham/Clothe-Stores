@@ -20,21 +20,21 @@ switch ($act) {
                 require_once("order/complete.php");
                 break;
             case 'oder':
-              require_once("order/checkout.php");
-              break;
+                require_once("order/checkout.php");
+                break;
             default:
                 require_once("order/checkout.php");
                 break;
         }
         break;
     case "wishlist":
-    if(isset($_GET['xuli']) ? $_GET['xuli'] : "list"){
-      require_once("wishlist/wishlist.php");
-      }
-      break;
+        if (isset($_GET['xuli']) ? $_GET['xuli'] : "list") {
+            require_once("wishlist/wishlist.php");
+        }
+        break;
     case 'blog':
-      require_once("blog/blog.php");
-      break;
+        require_once("blog/blog.php");
+        break;
     case "detail":
         require_once("product-detail/product-detail.php");
         break;
@@ -52,6 +52,9 @@ switch ($act) {
         break;
     case 'forgot-password':
         require_once("login/forgot-password.php");
+        break;
+    case 'update-account':
+        require_once("login/update-account.php");
         break;
     case "taikhoan":
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "login";
@@ -92,6 +95,7 @@ switch ($act) {
             }
             break;
         }
+        break;
     default:
         require_once("error-404.php");
         break;

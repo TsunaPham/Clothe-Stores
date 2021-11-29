@@ -38,13 +38,13 @@ class Mail_CT
     $email = $_POST['email'];
     $body = $_POST['reply'];
     $subject = "";
-    $name = "Kunzz";
+    $name = "HCMUT Clothes Store";
     $mail = new PHPMailer();
     $mail->isSMTP();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
-    $mail->Username = "thienkun0235@gmail.com";
-    $mail->Password = "thiendeptrai";
+    $mail->Username = "cagood123@gmail.com";
+    $mail->Password = "louyshfinxdbguab";
     $mail->Port = 587;
     $mail->Secure = "ssl";
         //email settings

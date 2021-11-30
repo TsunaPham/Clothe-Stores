@@ -282,8 +282,7 @@
                     <div class="row-text">
                         <h2 class="h2">Fast Fashion </h2>
                         <div class="rte-setting featured-row__subtext">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <p>We provide the fastest way to buy clothes you want. T-shirt, shoes, accessories,... all what you think about fashion, you can buy from here - HCMUT Clothes Store</p>
                         </div>
                         <a href="?act=shop" class="btn">Shop Now</a>
                     </div>

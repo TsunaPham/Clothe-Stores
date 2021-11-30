@@ -129,6 +129,7 @@ class LoginController
                 'Ten'  =>   $_POST['Ten'],
                 'SDT' => $_POST['SĐT'],
                 'Email' =>    $_POST['Email'],
+                'TaiKhoan' => $_POST['TaiKhoan'],
             );
             foreach ($data as $key => $value) {
                 if (strpos($value, "'") != false) {

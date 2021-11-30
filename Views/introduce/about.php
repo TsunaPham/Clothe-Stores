@@ -38,7 +38,7 @@
                 <p>0963 214 666</p>
             </div>
             <div class="flex align-items-center"><i class="icon anm anm-envelope-l mr-2"></i>
-                <p>nsthien.19it4@vku.udn.vn</p>
+                <p>anh.nguyenminh207@hcmut.edu.vn</p>
             </div>
             <hr />
             <ul class="list--inline site-footer__social-icons social-icons">

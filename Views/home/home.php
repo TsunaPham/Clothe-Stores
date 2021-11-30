@@ -280,7 +280,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 feature-row__item feature-row__text feature-row__text--left text-left">
                     <div class="row-text">
-                        <h2 class="h2">Fast Fashion </h2>
+                        <h2 class="h2">HCMUT Clothes Store - Fast and Beauty Fashion </h2>
                         <div class="rte-setting featured-row__subtext">
                             <p>We provide the fastest way to buy clothes you want. T-shirt, shoes, accessories,... all what you think about fashion, you can buy from here - HCMUT Clothes Store</p>
                         </div>

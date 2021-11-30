@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="assets/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/logo-1.png' />
 </head>
 
 <body>
@@ -167,7 +167,6 @@
                 class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
               <div class="dropdown-title">Hello <?php echo Session::get('adminName');?></div>
-              <a href="profile.html" class="dropdown-item has-icon"> <i class="far fa-user"></i> Profile</a>
               <div class="dropdown-divider"></div>
               <a href="?action=logout" name="action" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
                 Logout

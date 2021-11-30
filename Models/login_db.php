@@ -110,6 +110,7 @@ class Login extends Model
         $login = $this->conn->query($query2)->fetch_assoc();
         if ($result == true) {
             setcookie('doimk', 'Cập nhật tài khoản thành công', time() + 2);
+            $_SESSION['login'] = $login;
             $_SESSION['Ho'] = $login['Ho'];
             $_SESSION['Ten'] = $login['Ten'];
             $_SESSION['TaiKhoan'] = $login['TaiKhoan'];

@@ -26,19 +26,19 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="form-group">
                                 <label for="FirstName">First Name</label>
-                                <input type="text" name="Ho" placeholder="" id="FirstName" autofocus="" required value=<?php echo $_SESSION['Ten'] ?>>
+                                <input type="text" name="Ten" placeholder="" id="FirstName" autofocus="" required value="<?php echo $_SESSION['Ten'] ?>">
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="form-group">
                                 <label for="LastName">Last Name</label>
-                                <input type="text" name="Ten" placeholder="" id="LastName" required value=<?php echo $_SESSION['Ho'] ?>>
+                                <input type="text" name="Ho" placeholder="" id="LastName" required value="<?php echo $_SESSION['Ho'] ?>">
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="form-group">
-                                <label for="LastName">Username</label>
-                                <input type="text" name="TaiKhoan" placeholder="" id="LastName" required minlength="5" value=<?php echo $_SESSION['TaiKhoan'] ?>>
+                                <label for="Username">Username</label>
+                                <input type="text" name="TaiKhoan" placeholder="" id="Username" required minlength="5" value=<?php echo $_SESSION['TaiKhoan'] ?>>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -49,8 +49,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="form-group">
-                                <label for="LastName">Phone</label>
-                                <input type="text" name="SĐT" placeholder="" id="LastName" required pattern="[0-9]+" minlength="10" value=<?php echo $_SESSION['SDT'] ?>>
+                                <label for="Phone">Phone</label>
+                                <input type="text" name="SĐT" placeholder="" id="Phone" required pattern="[0-9]+" minlength="10" value=<?php echo $_SESSION['SDT'] ?>>
                             </div>
                         </div>
                     </div>

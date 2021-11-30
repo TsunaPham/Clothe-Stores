@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/home3-boxed.html   11 Nov 2019 12:24:28 GMT -->
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -189,7 +187,5 @@
       </div>
     </div>
 </body>
-
-<!-- belle/home3-boxed.html   11 Nov 2019 12:24:38 GMT -->
 
 </html>

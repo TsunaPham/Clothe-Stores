@@ -28,12 +28,6 @@
           <div class="filters-toolbar-wrapper">
             <div class="row">
               <div class="col-4 col-md-4 col-lg-4 filters-toolbar__item collection-view-as d-flex justify-content-start align-items-center">
-                <a href="shop-left-sidebar.html" title="Grid View" class="change-view change-view--active">
-                  <img src="assets/images/grid.jpg" alt="Grid" />
-                </a>
-                <a href="shop-listview.html" title="List View" class="change-view">
-                  <img src="assets/images/list.jpg" alt="List" />
-                </a>
               </div>
               <div class="col-4 col-md-4 col-lg-4 text-center filters-toolbar__item filters-toolbar__item--count d-flex justify-content-center align-items-center">
                 <span class="filters-toolbar__product-count">Showing: <?= $data_tong ?></span>

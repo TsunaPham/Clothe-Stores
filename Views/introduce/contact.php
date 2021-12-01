@@ -24,9 +24,9 @@
             </div>
         </div>
         <div class="bredcrumbWrap">
-            <div class="container breadcrumbs">
+            <!-- <div class="container breadcrumbs">
                 <a href="index.html" title="Back to the home page">Home</a><span aria-hidden="true">›</span><span>Contact Us</span>
-            </div>
+            </div> -->
         </div>
 
         <div class="container">

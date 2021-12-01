@@ -16,6 +16,7 @@
                                     <th>Email</th>
                                     <th>Tựa đề</th>
                                     <th>Nội dung</th>
+                                    <th>Số sao</th>
                                     <th>Ngày Comment</th>
                                     <th>Mã SP</th>
                                 </tr>
@@ -27,6 +28,8 @@
                             <td><?=$value['Email']?></td>
                             <td><?=$value['Tomtat']?></td>
                             <td><?=$value['Noidung']?></td>
+                            <td><?=$value['Star']?></td>
+
                             <td><?=$value['NgayCom']?></td>
                             <td><?=$value['MaSP']?></td>
                           </tr>

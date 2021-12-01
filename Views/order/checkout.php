@@ -133,7 +133,7 @@
     	                            <tfoot class="font-weight-600">
     	                                <tr>
     	                                    <td colspan="4" class="text-right">VAT </td>
-    	                                    <td>$10.00</td>
+    	                                    <td>10.00$</td>
     	                                </tr>
     	                                <tr>
     	                                    <td colspan="4" class="text-right">Total</td>

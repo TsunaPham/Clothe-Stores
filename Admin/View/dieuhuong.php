@@ -46,5 +46,8 @@ switch ($act) {
   case 'add-prm':
     include 'View/Sale/add.php';
     break;
+  default:
+  include 'errors-404.php';
+  break;
   }
  ?>

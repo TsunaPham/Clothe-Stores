@@ -30,8 +30,6 @@
                       <input type="text" id="subject" name="reply" class="form-control" placeholder="Content">
                     </div>
                   </div>
-                  <textarea id="ckeditor">
-                      </textarea>
                     <input type="submit" class="btn btn-info btn-border-radius waves-effect" name="" value="Send">
                 </form>
               </div>

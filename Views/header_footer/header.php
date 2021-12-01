@@ -14,18 +14,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-10 col-sm-8 col-md-5 col-lg-4">
-                <div class="currency-picker">
-                    <span class="selected-currency">USD</span>
-                    <ul id="currencies">
-                        <li data-currency="VND" class="">VND</li>
-                    </ul>
-                </div>
-                <div class="language-dropdown">
-                    <span class="language-dd">English</span>
-                    <ul id="language">
-                        <li class="">Vietnamese</li>
-                    </ul>
-                </div>
                 <p class="phone-no"><i class="anm anm-phone-s"></i> 0854464200</p>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block d-lg-block">

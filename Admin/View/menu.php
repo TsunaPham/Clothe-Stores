@@ -19,6 +19,7 @@ $_SESSION['act_now'] = $act;
       <li class="<?php if ($_SESSION['act_now'] === 'view-type') echo "dropdown active" ?>"><a class="nav-link" href="?act=view-type"><i data-feather="clipboard"></i><span>Product-Type</span></a></li>
       <li class="<?php if ($_SESSION['act_now'] === 'order') echo "dropdown active" ?>"><a class="nav-link" href="?act=order"><i data-feather="sliders"></i><span>Order</span></a></li>
       <li class="<?php if ($_SESSION['act_now'] === 'view-cate') echo "dropdown active" ?>"><a class="nav-link" href="?act=view-cate"><i data-feather="box"></i><span>Category</span></a></li>
+      <li class="<?php if ($_SESSION['act_now'] === 'view-comment') echo "dropdown active" ?>"><a class="nav-link" href="?act=view-comment"><i data-feather="message-square"></i><span>Comment</span></a></li>
     </ul>
   </aside>
 </div>

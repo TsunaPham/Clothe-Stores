@@ -92,6 +92,18 @@ switch ($act) {
         case 'delete':
           $ct->delete();
           break;
+          case 'add-type':
+            $ct->gopage();
+            break;
+            case 'add':
+              $ct->add();
+              break;
+              case 'edit-type':
+                $ct->go_edit();
+                break;
+                case 'edit':
+                $ct->update();
+                  break;  
         }
       break;
     case 'order':
@@ -148,5 +160,11 @@ switch ($act) {
           break;
         }
     break;
+    case 'view-comment':
+      require_once('Control/comment.php');
+      $ct = new Comment_CT();
+      switch ($run){
+        default:
+        $ct->list();
+      }
     }
- ?>
